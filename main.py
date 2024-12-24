@@ -88,8 +88,8 @@ class Model:
     secrets=[modal.Secret.from_name("API_KEY")]
 )  
 def keep_warm():
-    health_url="https://alexandra-zavala--ainstagram-model-health.modal.run"
-    generate_url="https://alexandra-zavala--ainstagram-model-generate.modal.run"
+    health_url="***"
+    generate_url="***"
     health_response = requests.get(health_url)
     print(health_response)
     if health_response.status_code == 'healthy':
